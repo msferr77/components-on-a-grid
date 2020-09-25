@@ -16,21 +16,17 @@ img {
 
 body {
   margin: 0;
-  padding: 0;
+  gap: 1rem;
+  padding: 1rem;
   background-color: #f2f1ed;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 14rem;
-  grid-template-areas:
-    "header header"
+  grid-template-rows: 1fr 9rem;
+  grid-template-areas: "header header";
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: contents;
-}
-
-main {
   display: contents;
 }
 
@@ -41,25 +37,36 @@ main {
 }
 
 nav {
-    grid-column: 2;
-    grid-row: 1;
-    z-index: 1;
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 1;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    font-size: 2rem;
-    text-decoration: underline white;
-    font-family: "Patua One", sans-serif;
+  display: flex;
+  list-style-type: none;
+  font-size: 2rem;
+  text-decoration: underline white;
+  font-family: "Patua One", sans-serif;
+  margin: 1rem;
+  padding-right: 2rem;
 }
 
-.logo{
+.logo {
   grid-column: 1;
   grid-row: 2;
   z-index: 1;
-  max-width: 14rem;
+  max-width: 15rem;
+  padding: 1rem;
+}
+
+main {
+  display: contents;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 figcaption h2 {
