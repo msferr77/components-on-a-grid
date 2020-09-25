@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  background-color: #f2f1ed;
   font-family: Georgia, serif;
   line-height: 1.5;
 }
@@ -16,10 +17,9 @@ img {
 
 body {
   margin: 0;
+  display: grid;
   gap: 1rem;
   padding: 1rem;
-  background-color: #f2f1ed;
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-template-rows: 1fr 9rem;
   grid-template-areas: "header header";
